@@ -5,7 +5,7 @@ import kotlin.math.min
 
 fun main() {
     val (k, x, y) = readln().split(" ").map { it.toInt() }
-    val maxi = max(x, y); val mini = min(x, y);
+    val maxi = max(x, y); val mini = min(x, y)
     if (maxi >= k) {
         if (maxi - mini >= 2) println(0)
         else println(2 - max(x, y) + min(x, y))
